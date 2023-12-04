@@ -1,7 +1,150 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Dauren Syzdyq / CV / Resume</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dauren Syzdyq">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/kube.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/custom.min.css" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<style>
+		.intro h1:before {
+			/* Edit this with your name or anything else */
+			content: 'DAUREN';
+		}
+	</style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	<!-- Navigation -->
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+				    <span class="logo">Dauren Syzdyq</span>
+				</div>
+			    <nav id="navbar-1" class="navbar item-nav">
+				    <ul>
+				        <li class="active"><a href="#about">About</a></li>
+				        <li><a href="#experiences">Experiences</a></li>
+				        <li><a href="#achievements">Achievements</a></li>
+				        <li><a href="#skills">Skills</a></li>
+				    </ul>
+				</nav>
+			</header>
+		</div>
+	</div>
+
+	<!-- Introduction -->
+	<div class="intro section" id="about">
+		<div class="container">
+			<p>Hi, I’m Dauren</p>
+			<div class="units-row units-split wrap">
+				<div class="unit-20">
+					<img src="img/ava.webp" alt="Avatar">
+				</div>
+				<div class="unit-80">
+					<h1>Ctrl + Alt + <br><span id="typed"></span></h1>
+				</div>
+				<p>
+					Dynamic and goal-oriented frontend developer with experience in crafting innovative web applications and interfaces. Committed to advancing expertise in cutting-edge technologies, enhancing user experiences, and fostering effective teamwork.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Work Experience -->
+	<div class="work section second" id="experiences">
+		<div class="container">
+			<h1>Work<br>Experiences</h1>
+			<ul class="work-list">
+				<li><a href="#">Kazakhstan RTRC JSC</a></li>
+				<li>2013-2017</li>
+				<li>Web Developer</li>
+				<br/>
+				<li>2017-2021</li>
+				<li>Frontend developer</li>
+				<br/>
+				<li>2021-2022</li>
+				<li>Project manager</li>
+				<br/>
+				<li>2022-present day</li>
+				<li>Developer</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Award & Achievements -->
+	<div class="award section second" id="achievements">
+		<div class="container">
+			<h1>Licenses  &amp;<br>certificates</h1>
+			<ul class="award-list list-flat">
+				<li>April 2013</li>
+				<li>International English Language Testing System</li>
+				<li>British Council</li>
+			</ul>
+			<ul class="award-list list-flat">
+				<li>November 2016</li>
+				<li>Yandex Metrika</li>
+				<li>Yandex</li>
+			</ul>
+			<ul class="award-list list-flat">
+				<li>November 2016</li>
+				<li>Google Analytics Individual Qualification</li>
+				<li>Google</li>
+			</ul>
+			<ul class="award-list list-flat">
+				<li>November 2016</li>
+				<li>Google AdWords certification - search advertising</li>
+				<li>Google</li>
+			</ul>
+			<ul class="award-list list-flat">
+				<li>July 2018</li>
+				<li>Principles of Efficiency</li>
+				<li>IAPG, Dauren Nurov</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Technical Skills -->
+	<div class="skills section second" id="skills">
+		<div class="container">
+			<h1>Technical<br>Skills</h1>
+			<ul class="skill-list list-flat">
+				<li>Web Technology</li>
+				<li>HTML / CSS / SASS / PHP / Javascript</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Database</li>
+				<li>MySQL / MongoDB</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Framework</li>
+				<li>Laravel / Symfony</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>CMS</li>
+				<li>Drupal / DLE / WordPress / October</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Javascript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/typed.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+		function newTyped(){}$(function(){$("#typed").typed({
+		// Change to edit type effect
+		strings: ["CREATE", "DEV", "PROD"],
+
+		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+    </script>
 </body>
 </html>
